@@ -490,7 +490,6 @@ body {
 /* ----------------/Footer Logo---------------- */
 
 
-
 /* ----------------Footer Text---------------- */
 .footer-text {
     font-weight: 400;
@@ -502,7 +501,6 @@ body {
 }
 
 /* ----------------/Footer Text---------------- */
-
 
 
 /* ----------------Footer Social---------------- */
@@ -550,7 +548,292 @@ body {
     background-color: #31D0AA;
 }
 
+.footer-input-container {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 80px;
+}
+
+.footer-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-input {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding: 8px 16px;
+}
+
+.footer-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
+.footer-input:focus {
+    outline: none;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #f4f4fd
+}
+
+.telega-sub-link {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: 165px;
+    height: 40px;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 24px;
+    padding-left: 24px;
+}
+
+.footer-icon {
+    fill: #ffffff;
+}
+
 /* ----------------/Footer Social---------------- */
 
 
 /* =================== /Footer =================== */
+
+
+
+/* =================== Modal =================== */
+.modal-overlay {
+    background-color: rgba(46, 47, 66, 0.4);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    position: relative;
+    background-color: #fcfcfc;
+    width: 408px;
+    height: 80%;
+    max-height: 584px;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 24px;
+    overflow: auto;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon{
+    fill: #ffffff;
+} 
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
+.modal-close-icon {
+    fill: #2e2f42; 
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-top: 72px;
+    margin-bottom: 16px;
+}
+
+.contact-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.contact-form-field-label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-bottom: 4px;
+}
+
+.contact-form-field-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    padding-left: 38px;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-field-input:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.contact-input-wrapper {
+    position: relative;
+}
+
+.contact-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-field-input:focus + .contact-input-icon {
+    fill: #4d5ae5;
+}
+
+.contact-form-field-commnet {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+}
+
+.contact-form-field-commnet:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.contact-form-field-commnet::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.contact-form-checkbox-wrapper {
+    display: flex;
+    justify-items: center;
+    margin-bottom: 24px;
+}
+
+.contact-form-checkbox-label {
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.privacy-policy-link {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.contact-form-checkbox:checked + 
+.contact-form-checkbox-label > 
+.contact-form-custom-checkbox {
+    border-color: #404BBF;
+    background-color: #404BBF;
+    fill:#f4f4fd;
+}
+
+.contact-form-checkbox:focus+
+.contact-form-checkbox-label>
+.contact-form-custom-checkbox {
+    border: 2px solid #4d5ae5;
+}
+
+.contact-form-custom-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    cursor: pointer;
+    fill:transparent;
+    margin-right: 8px;
+}
+
+.modal-send-btn {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-send-btn:hover, 
+.modal-send-btn:focus {
+    background-color: #404bbf;
+}
+/* =================== /Modal =================== */

@@ -410,8 +410,98 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-input-container">
+                <form class="footer-form">
+                    <label class="footer-form-label" for="">Subscribe</label>
+                    <input class="footer-input" 
+                           type="email"
+                           id="footer-input-email"
+                           name="footer-input-email"
+                           placeholder="E-mail">
+                </form>
+                <a class="telega-sub-link" href="" >
+                    Subscribe
+                    <svg class="footer-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
     </footer>
+
+              <!-- Modal -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close-btn" type="button">
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="contact-form">
+                <div class="contact-form-field-wrapper">
+                    <label class="contact-form-field-label" for="user-name">
+                        Name
+                    </label>
+                    <div class="contact-input-wrapper">
+                        <input class="contact-form-field-input" type="text" id="user-name" name="user-name" required>
+                        <svg class="contact-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="contact-form-field-wrapper">
+                    <label class="contact-form-field-label" for="user-number">
+                        Phone
+                    </label>
+                    <div class="contact-input-wrapper">
+                        <input class="contact-form-field-input" type="tel" id="user-number" name="user-number" required>
+                        <svg class="contact-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="contact-form-field-wrapper">
+                    <label class="contact-form-field-label" for="user-email">
+                        Email
+                    </label>
+                    <div class="contact-input-wrapper">
+                        <input class="contact-form-field-input" type="email" id="user-email" name="user-email" required>
+                        <svg class="contact-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="contact-form-field-wrapper">
+                    <label class="contact-form-field-label" for="comment-area">
+                        Comment
+                    </label>
+                    <textarea class="contact-form-field-commnet" 
+                        name="user-comment"
+                        id="comment-area"
+                        placeholder="Text input">
+                    </textarea>
+                </div>
+                <div class="contact-form-checkbox-wrapper">
+                    <input class="contact-form-checkbox visually-hidden" 
+                       type="checkbox"
+                       id="privacy-policy"
+                       name="privacy-policy"
+                       value="checked"
+                       required>
+                    <label class="contact-form-checkbox-label" for="privacy-policy">
+                        <span class="contact-form-custom-checkbox">
+                            <svg class="custom-checkbox-icon" width="10" height="8">
+                                <use href="./images/icons.svg#icon-checkmark"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="privacy-policy-link" href="">Privacy Policy</a>
+                    </label>
+                </div>
+            </form>
+            <button class="modal-send-btn" type="submit">Send</button>
+        </div>
+    </div>
 </body>
 
 </html>
