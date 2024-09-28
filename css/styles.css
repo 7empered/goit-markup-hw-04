@@ -194,6 +194,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     padding: 188px 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .page-title {
@@ -253,7 +255,6 @@ body {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     background-color: #f4f4fd;
-    padding: 24px 100px;
     margin-bottom: 8px;
 }
 
@@ -398,7 +399,7 @@ body {
     overflow: hidden;
 }
 
-.portfolio-img-wrapper:hover .portfolio-overlay {
+.portfolio-list-item:hover .portfolio-overlay {
     transform: translateY(0%);
 }
 
@@ -458,6 +459,8 @@ body {
 
 
 /* =================== /Main =================== */
+
+
 
 /* =================== Footer =================== */
 .page-footer {
